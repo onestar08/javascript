@@ -9,10 +9,26 @@
       for(var i = 0; i < 10; i = i + 1){
         for(var k = 0; k < 10; k = k + 1){
           /*document.write(String(i)+String(k)+ '<br />');*/
-          document.write(i+k+ '<br />');
+          document.write('<div>');
+          document.write(i+k);
+          document.write('</div>');
+          console.log(i+k);
         /* 결과값이 다름, 요상함 */
         }
       }
     </script>
+    <div>1 2 3 4 5 6 7</div><div>'8 '+'9'1011121314</div>
+    <span>aaaaa</span><span>bbbbbb</span>
   </body>
 </html>
+
+<script>
+var i = 0;
+while (i < 10){
+  var k = 0;
+  while (k < 10){
+  document.write(''+i+k+ '<br/ >');
+  k = k + 1;}
+  i = i + 1;
+  }
+</script>
