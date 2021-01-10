@@ -1,3 +1,9 @@
+<!-- 함수 과제
+2의 거듭제곱을 구하는 함수 만들기 ex) powerOfTwo(3)  == 8
+위에서 만든 함수에 1 ~ 16까지 넣어 화면에 표시하기(반복문 사용)
+(고급) 11길이의 문자(aaabbbbcccc)를 넣으면, 전화번호처럼 중간에 대시(‘-’)를 사용하여 (aaa-bbbb-cccc) 형식으로 나오는 함수 만들기 -->
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -6,12 +12,13 @@
   </head>
   <body>
     <script type="text/javascript">
-      var powerOfTwo function (){
-        var i = 0;
-
+      function powerOfTwo(){
+        for(var n = 1; n < 17; n = n + 1){
+          document.write(Math.pow(2,n));
+          document.write('<br />');
       }
-      document.write(powerOfTwo(3));
-
+    }
+      powerOfTwo();
     </script>
   </body>
 </html>
